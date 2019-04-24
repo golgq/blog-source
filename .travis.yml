@@ -11,8 +11,6 @@ branches:
 cache:
   directories:
     - node_modules
-    - pandoc
-    - hexo-cli
 
 # 构建之前安装hexo-cli，因为接下来会用到
 before_install:
@@ -20,6 +18,7 @@ before_install:
   - sudo dpkg -i pandoc*.deb
   - npm install -g hexo-cli
   - npm install hexo-renderer-pandoc --save
+  - export TZ='Asia/Shanghai' # 更改时区
 
 # 安装依赖
 install:
