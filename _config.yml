@@ -79,9 +79,9 @@ deploy:
 ## Docs: https://hexo.io/docs/deployment.html
   type: git
   # 下方的GH_TOKEN会被.travis.yml中sed命令替换
-  #repo: https://GH_TOKEN@github.com/golgq/golgq.github.io.git
+  repo: https://GH_TOKEN@github.com/golgq/golgq.github.io.git
   branch: master
-  repo: https://github.com/golgq/golgq.github.io.git
+  #repo: https://github.com/golgq/golgq.github.io.git
 
   
 # Markdown-it config
