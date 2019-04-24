@@ -49,7 +49,7 @@ rss:
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  #since: 2015
+  since: 2019
 
   # Icon between year and copyright info.
   icon:
@@ -162,9 +162,9 @@ menu:
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
-  #schedule: /schedule/ || calendar
+  schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
+  commonweal: /404/ || heartbeat
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -198,7 +198,7 @@ site_state: true
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
   #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+  E-Mail: mailto:yourname@gmail.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -322,9 +322,9 @@ read_more_btn: true
 post_meta:
   item_text: true
   created_at: true
-  updated_at:
-    enable: true
-    another_day: true
+  updated_at: true
+  enable: true
+  another_day: true
   categories: true
 
 # Post wordcount display settings
@@ -341,7 +341,7 @@ codeblock:
   border_radius:
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result
     show_result: false
     # Style: only 'flat' is currently available, leave it blank if you prefer default theme
@@ -383,7 +383,7 @@ related_posts:
 # Dependencies: https://github.com/hexojs/hexo-deployer-git
 post_edit:
   enable: false
-  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name # Link for view source.
+  url: https://github.com/golgq/blog-source/tree/master/source/_posts # Link for view source.
   #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name # Link for fork & edit.
 
 
@@ -584,13 +584,13 @@ reading_progress:
 # To get api_key: https://console.developers.google.com
 # Create & manage a public Google calendar: https://support.google.com/calendar/answer/37083
 calendar:
-  enable: false
-  calendar_id: <required> # Your Google account E-Mail
-  api_key: <required>
+  enable: true
+  calendar_id: 9ej314r1k5svoblgtvucfa4n5o@group.calendar.google.com # Your Google account E-Mail
+  api_key: AIzaSyBBzI050wEyUTpRDqReDr3eNm9ugRrgcyw
   orderBy: startTime
   offsetMax: 24 # Time Range
   offsetMin: 4 # Time Range
-  showDeleted: false
+  showDeleted: true
   singleEvents: true
   maxResults: 250
 

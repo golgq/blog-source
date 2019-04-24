@@ -83,25 +83,8 @@ deploy:
   branch: master
   #repo: https://github.com/golgq/golgq.github.io.git
 
-  
-# Markdown-it config
-markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: true
-    linkify: true
-    typographer: true
-    quotes: '“”‘’'
-  plugins:
-    - markdown-it-abbr
-    - markdown-it-footnote
-    - markdown-it-ins
-    - markdown-it-sub
-    - markdown-it-sup
-  anchors:
-    level: 2
-    collisionSuffix: 'v'
-    permalink: true
-    permalinkClass: header-anchor
-    permalinkSymbol: ¶
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: false
+  total_time: false
