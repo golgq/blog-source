@@ -9,10 +9,10 @@ branches:
 
 # 指定node_modules缓存
 cache:
-  - pandoc
-  - hexo-cli
   directories:
     - node_modules
+    - pandoc
+    - hexo-cli
 
 # 构建之前安装hexo-cli，因为接下来会用到
 before_install:
