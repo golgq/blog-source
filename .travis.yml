@@ -17,7 +17,6 @@ before_install:
   - wget ${pandoc}
   - sudo dpkg -i pandoc*.deb
   - npm install -g hexo-cli
-  - npm install hexo-renderer-pandoc --save
   - export TZ='Asia/Shanghai' # 更改时区
 
 # 安装依赖
