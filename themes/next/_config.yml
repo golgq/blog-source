@@ -586,7 +586,7 @@ reading_progress:
 calendar:
   enable: true
   calendar_id: 9ej314r1k5svoblgtvucfa4n5o@group.calendar.google.com # Your Google account E-Mail
-  api_key: AIzaSyBBzI050wEyUTpRDqReDr3eNm9ugRrgcyw
+  api_key: GG_KEY
   orderBy: startTime
   offsetMax: 24 # Time Range
   offsetMin: 4 # Time Range
