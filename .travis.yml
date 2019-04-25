@@ -25,6 +25,7 @@ install:
 
 # 执行脚本，先hexo clean 再 hexo generate，会使用hexo的同学应该不陌生。
 script:
+  - sed -i "s/GG_KEY/${GG_KEY}/g" ./themes/next/_config.yml
   - hexo clean
   - hexo generate
 
@@ -35,5 +36,4 @@ after_success:
   - git config --global user.email "golgq@qq.com"
   # 替换同目录下的_config.yml文件中GH_TOKEN字符串为travis后台配置的变量
   - sed -i "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
-  - sed -i "s/GG_KEY/${GG_KEY}/g" ./themes/next/_config.yml
   - hexo deploy
